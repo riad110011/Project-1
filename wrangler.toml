@@ -1,0 +1,11 @@
+name = "file-share-bot"       # Worker project name
+type = "javascript"           # Worker type
+account_id = "67158f6d1dee70d6a2b6133008717a55"  # Cloudflare account ID
+workers_dev = true
+route = ""                    # যদি custom domain থাকে, দিলে URL
+zone_id = ""                  # শুধু custom domain থাকলে
+
+# ================= D1 DATABASE BINDING =================
+[[d1_databases]]
+binding = "DB"               # JS কোডে env.DB হিসেবে ব্যবহার হবে
+database_name = "my_bot_db"  # Cloudflare D1 DB নাম
